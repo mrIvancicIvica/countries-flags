@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <header>
+      <h1>Where in the world?</h1>
+      <div class="darkMode">
+        <object
+          data="./app/icons/moon.svg"
+          width="23px"
+          height="23px"
+          type=""
+        ></object>
+        <p>Dark Mode</p>
+      </div>
+    </header>
+    <div class="searchRegion">
+      <div>
+        <input
+          class="input"
+          type="text"
+          placeholder="Search for a country..."
+        />
+      </div>
+
+      <div class="dropdown">
+        <button class="dropBtn">Filter by Region</button>
+        <div class="dropdown-content">
+          <p class="region" data-filter="Africa">Africa</p>
+          <p class="region" data-filter="Americas">Americas</p>
+          <p class="region" data-filter="Asia">Asia</p>
+          <p class="region" data-filter="Europe">Europe</p>
+          <p class="region" data-filter="Oceania">Oceania</p>
+        </div>
+      </div>
+    </div>
+    <div class="countries" id="countries"></div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
